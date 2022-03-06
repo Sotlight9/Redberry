@@ -1,0 +1,28 @@
+
+   
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main h1{
+font-family: Rowdies;
+color:  rgba(254, 59, 31, 1);;
+font-size:42px;
+border-radius: 50px;
+
+
+}

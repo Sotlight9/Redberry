@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.col-1,
+.col-2 {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.col-1 {
+  background-color: white;
+}
+
+.col-1 h1 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Rowdies; 
+  color: rgba(254, 59, 31, 1);
+
+
+}
+
+.form {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.form .dropdown {
+  margin-top: 1em;
+  width:30em;
+  height:3em;
+  border: 1px solid rgba(82, 85, 87, 1);
+  padding-left: 2em;
+  color:rgba(82, 85, 87, 1);
+
+  
+  
+}
+.form .experienceDuration{
+  margin-top: 1em;
+  width: 28em;
+  height:3em;
+  border: 1px solid rgba(82, 85, 87, 1);
+  padding-left: 2em;
+}
+.form .input{
+  width: 28em;
+  height:3em;
+  border: 1px solid rgba(82, 85, 87, 1);
+  padding-left: 2em;
+  margin-bottom: 10em;
+}
+
+.form .submit{
+width:15em;
+height:2em;
+background-color:rgba(254, 59, 31, 1);
+color:white;
+border: none;
+margin-left: 15em;
+margin-bottom: 3em;
+}
+
+
+.dots_container {
+  margin-top: 4em;
+  display: flex;
+  gap: .7em;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots_container .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgba(254, 59, 31, 1);
+  opacity: 50%;
+  cursor: pointer;
+  
+}
+
+.dots_container .dot.active {
+  opacity: 100%;
+}
+
+.dots_container .dot-arrow {
+  color: rgba(254, 59, 31, 1);
+  border: 1.5px solid rgba(254, 59, 31, 1);
+  border-radius: 50%;
+
+  height: 20px;
+  width: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+
+.col-2 {
+  background-color: black;
+}
+
+.col-2 h2 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Rowdies;
+  color: rgba(254, 59, 31, 1);
+  padding-right: 3em;
+  
+
+}
+.col-2 p{
+  
+  color:white;
+  font-size: 17px;
+  font-family: Montserrat extralight;
+  max-width: 29em;
+  line-height: 200%;
+  letter-spacing: 0.05em;
+  padding-top: 7em;
+  margin-bottom: 6em;
+}
+
+
+
