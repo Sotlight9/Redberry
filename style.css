@@ -20,42 +20,43 @@
   justify-content: center;
 }
   .main img {
-  position: absolute;
+  position: flex;
   height: 300px;
   width: 400px;
   object-fit: contain;
-  padding-top: 400px;
   padding-left: center;
   transform: rotate(3deg);
 }
 .main h1 {
   font-family: Rowdies;
-  position: absolute;
+  position: flex;
   object-fit: contain;
-  top: 160px;
   object-position: center;
   font-size: 50px;
   color: rgba(254, 59, 31, 1);
   font-weight: bold;
+  padding-top: 2em;
 }
 .main button{
 font-family: Montserrat extralight;
 font-size: 20px;
 line-height: 29px;
 background-color: rgba(254, 59, 31, 1);
-width: 280px;
+width: 270px;
 height: 60px;
 border-radius: 50px;
 border-style: none;
 color: white;
-top: 160px;
+cursor: pointer;
+margin-top: 5em;
+padding: .7em 0;
+justify-content: center;
+align-items: center;
+
 }
 main h2{
 font-family: Montserrat extralight;
 color: white;
 font-size:16px;
 text-decoration: underline;
-
-
-
 }

@@ -154,6 +154,8 @@
 
   font-size: 15px;
   font-weight: bold;
+
+  cursor: pointer;
 }
 
 .col-2 {

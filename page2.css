@@ -97,6 +97,7 @@
   font-weight: bold;
   margin-left: .5em;
 
+  cursor: pointer;
 }
 
 .col-2 {
