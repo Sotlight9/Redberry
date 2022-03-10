@@ -21,12 +21,7 @@ async function fetchSkills() {
 
   const response = await fetch(url);
   const json = await response.json();
-
   return json;
-}
-
-async function postExperience() {
-  //TODO: post the skill && experience
 }
 
 window.addEventListener('load', async function () {
@@ -43,8 +38,4 @@ formEl.addEventListener('submit', async function (event) {
      const span = document.createElement('span');
      span.innerText = `${skillId} years of experience: ${experience}`;
      divEl.appendChild(span);
-
-  //TODO:
-  //   const response = await postExperience(skillId, experience);
-  //   console.log(response);
 });
