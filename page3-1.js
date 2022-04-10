@@ -1,6 +1,8 @@
 const selectEl = document.getElementById('select');
 const formEl = document.getElementById('form');
 
+let skills = [];
+
 const inputForExperienceDuration =
   document.getElementById('experienceDuration');
 
@@ -25,17 +27,24 @@ async function fetchSkills() {
 }
 
 window.addEventListener('load', async function () {
-  const skills = await fetchSkills();
+  skills = await fetchSkills();
   addSkillsToSelectEl(skills);
+  attachEventListener();
 });
 
-formEl.addEventListener('submit', async function (event) {
-  event.preventDefault();
+function attachEventListener(){
+  formEl.addEventListener('submit', async function (event) {
+    event.preventDefault();
 
-  const skillId = selectEl.value;
-  const experience = inputForExperienceDuration.value;
-  const divEl = document.getElementById('newTextarea');
-     const span = document.createElement('span');
-     span.innerText = `${skillId} years of experience: ${experience}`;
-     divEl.appendChild(span);
-});
+    const skillId = parseInt(selectEl.value);
+    const item = skills.find((skill) => skill.id === skillId);
+
+    if(item){
+      const experience = inputForExperienceDuration.value;
+      const divEl = document.getElementById('newTextarea');
+      const span = document.createElement('span');
+      span.innerText = `${item.title} years of experience: ${experience}`;
+      divEl.appendChild(span);
+    }
+  });
+}
