@@ -42,9 +42,18 @@ function attachEventListener(){
     if(item){
       const experience = inputForExperienceDuration.value;
       const divEl = document.getElementById('newTextarea');
-      const span = document.createElement('span');
-      span.innerText = `${item.title} years of experience: ${experience}`;
-      divEl.appendChild(span);
+      const spanText = document.createElement('span');
+      spanText.style.border = '1px solid rgba(82, 85, 87, 1)';
+      spanText.style.padding = '10px 100px';
+      spanText.style.display = 'flex';
+      spanText.style.flexDirection = 'column';
+      spanText.style.margin = '10px 0px';
+      spanText.style.color = 'rgba(82, 85, 87, 1)';
+      
+
+
+      spanText.innerText = `${item.title} years of experience: ${experience}`;
+      divEl.appendChild(spanText);
     }
   });
 }
